@@ -1,0 +1,43 @@
+.palette {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.palette__side {
+  width: 15vw;
+  height: 25vw;
+  background-color: gray;
+}
+
+.palette__center {
+  width: calc(45vw + 2rem);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.palette__box1 {
+  width: 30vw;
+  height: 15vw;
+  background-color: gray;
+}
+
+.palette__box2 {
+  width: 15vw;
+  height: 15vw;
+  background-color: gray;
+}
+
+.palette__side,
+.palette__box1,
+.palette__box2 {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.palette__side:hover,
+.palette__box1:hover,
+.palette__box2:hover {
+  transform: translate(-2px, -3px);
+}
